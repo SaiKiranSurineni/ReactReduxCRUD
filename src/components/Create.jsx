@@ -12,18 +12,20 @@ const Create = () => {
 
   const getUserData = (e) => {
     setUsers({ ...users, [e.target.name]: e.target.value });
+
+    console.log(users);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("users...", users);
     dispatch(createUser(users));
-    navigate("/read");
+    navigate("/read");  //Navigate to List of Employees
   };
 
   return (
     <div>
-      <h2 className="my-2">Fill the data</h2>
+      <h2 className="my-2">Add Employee Details</h2>
       <form className="w-50 mx-auto my-5" onSubmit={handleSubmit}>
         <div class="mb-3">
           <label class="form-label">Name</label>
@@ -73,6 +75,7 @@ const Create = () => {
             value="Female"
             type="radio"
             onChange={getUserData}
+            required
           />
           <label class="form-check-label">Female</label>
         </div>

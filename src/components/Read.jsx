@@ -85,7 +85,7 @@ const Read = () => {
                 <div className="card-body">
                   <h5 className="card-title">{ele.name}</h5>
                   <h6 className="card-subtitle mb-2 text-muted">{ele.email}</h6>
-                  <p className="card-text">{ele.gender}</p>
+                  <p className="card-text">{ele.gender}</p> 
                   <button
                     className="card-link"
                     onClick={() => [setId(ele.id), setShowPopup(true)]}

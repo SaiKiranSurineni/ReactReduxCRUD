@@ -17,18 +17,18 @@ const Navbar = () => {
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid ">
-          <h4 className="navbar-brand">RTK</h4>
-
+          <h4 className="navbar-brand">GangerPro</h4>
+              
           <div className="collapse navbar-collapse">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <Link to="/" className="nav-link">
-                  Create Post
+                  Add Employee
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/read" className="nav-link">
-                  All Post ({allusers.length})
+                <Link to="/read" className="nav-link"> 
+                  List of Employees ({allusers.length}) 
                 </Link>
               </li>
             </ul>
